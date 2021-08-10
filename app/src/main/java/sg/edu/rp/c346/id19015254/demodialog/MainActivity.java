@@ -210,6 +210,8 @@ public class MainActivity extends AppCompatActivity {
                 int hourOfDay = now.get(Calendar.HOUR_OF_DAY);  // Current Hour
                 int minute = now.get(Calendar.MINUTE);  // Current Minute
                 TimePickerDialog myTimeDialog = new TimePickerDialog(MainActivity.this, myTimeListener, hourOfDay, minute, true);
+
+                myTimeDialog.show();
             }
         });
     }
